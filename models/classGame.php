@@ -1,8 +1,8 @@
 <?php
 require_once "classModel.php";
 
-class Articles extends Model{
-    public function chargementArticles(){
+class Game extends Model{
+    public function getGames(){
         $req1 = $this->getBdd()->prepare("SELECT * FROM article ORDER BY categorie");
         $req1->execute();
         return $articles = $req1->fetchAll();

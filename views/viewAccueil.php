@@ -11,19 +11,19 @@
 <body>
     <?php require "./views/header.php"?>
     <?php
-    foreach($afficherArticles as $article){
+    foreach($displayGames as $game){
     ?>
-    <a href="http://localhost/projets/Ann%c3%a9e%202/POO/exercice12-Projet/?page=viewArticlesDetails&id=<?=$article['id']?>">
+    <a href="http://localhost/projets/Ann%c3%a9e%202/POO/exercice12-Projet/?page=viewArticlesDetails&id=<?=$game['id']?>">
     <div class="card">
         <div class="header-card">
-            <img class="image" src=<?php echo $article['image']?>>
+            <img class="image" src=<?php echo $game['image']?>>
         </div>
         <div class="card-middle">
-            <div class="titre"><?php echo $article['titre']?></div><br/>
-            <div class="desc"><?php echo $article['desc']?></div><br/>
+            <div class="titre"><?php echo $game['titre']?></div><br/>
+            <div class="desc"><?php echo $game['desc']?></div><br/>
           </div>
           <div class="footer-card">
-            <span class="prix"><?php echo $article['prix']?> €</span>
+            <span class="prix"><?php echo $game['prix']?> €</span>
           </div>
     </div>
     </a>

@@ -1,23 +1,19 @@
 <?php
-require_once "./models/classArticles.php";
+require_once "./models/classGame.php";
 require_once "./models/classUsers.php";
 
 class TwintESportController{
-    private $articles;
+    private $games;
     private $users;
 
     public function __construct(){
-        $this->articles = new Articles;
+        $this->games = new Game;
         $this->users = new User;
     }
 
     public function displayAccueil(){
-        $afficherArticles = $this->articles->chargementArticles();
+        $displayGames = $this->games->getGames();
         require "./views/viewAccueil.php";
-    }
-    public function displayArticle($id){
-        $article = $this->articles->recupererArticle($id);
-        require "./views/viewArticlesDetails.php";
     }
     public function displayUser(){
         if (!empty($_SESSION['iduser'])){
