@@ -1,0 +1,49 @@
+body{
+    background-color: #eee;
+}
+#body{
+    margin:0px;
+    padding:0px;
+    width:100%;
+    text-align:center;
+}
+#form{
+    text-align:center;
+    margin-top:50px;
+}
+.inputConnect{
+    font-size:20px;
+    border-color: #333;
+    border: solid 2px;
+    border-radius:30px;
+    background-color:#ffffff;
+    color: #333;
+    margin-top:10px;
+    padding:5px 10px;
+}
+.inputConnect::placholder{
+    font-size:20px;
+    color: #333;
+}
+#envoyer{
+    margin-right:168px;
+}
+#deconnect{
+    position:relative;
+    margin-left:100px;
+    top:-37px;
+}
+#btnDeconnect{
+    font-size:20px;
+    color: #fff;
+    border: solid 2px;
+    border-color: #333;
+    border-radius:30px;
+    background-color:#e30505dc;
+
+    padding:5px 10px;
+}
+form label{
+    margin-top:10px;
+    display:inline-block;
+}

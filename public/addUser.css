@@ -1,0 +1,27 @@
+#body{
+    margin:0px;
+    padding:0px;
+    width:100%;
+    text-align:center;
+}
+body{
+    background-color: #eee;
+}
+#form{
+    text-align:center;
+    margin-top:50px;
+}
+.inputConnect{
+    font-size:20px;
+    border-color: #333;
+    border: solid 2px;
+    border-radius:30px;
+    background-color:#ffffff;
+    color: #333;
+    margin-top:5px;
+    padding:5px 10px;
+}
+.inputConnect::placholder{
+    font-size:20px;
+    color: #333;
+}
