@@ -6,9 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tournois</title>
   <link href="./public/tournoi.css" rel="stylesheet">
+  <link href="./public/game-filter1.css" rel="stylesheet">
 </head>
 <body>
-  <?php include "./views/header.php" ?>
+  <?php include "./views/header.php" ;
+  include "./views/filter.php"; ?>
   <!-- Section Head Tournoi -->
   <section class="head-page">
     <h1>Tournois</h1>
@@ -42,7 +44,7 @@
           <p>1 VS 1</p>
         </div>
       </div>
-      <a href="http://localhost/twint/Twint-E-Sport/?page=viewMatches"><button class="button-join">Let's Go !</button></a>
+      <a href="./?page=viewMatches"><button class="button-join">Let's Go !</button></a>
     </div>
   </section>
 

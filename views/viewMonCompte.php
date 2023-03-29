@@ -3,6 +3,7 @@
 <head>
 	<title>Ma page de profil</title>
 	<link rel="stylesheet" type="text/css" href="./public/monCompte.css">
+  <link rel="stylesheet" type="text/css" href="./public/game-filter2.css">
 </head>
 <body>
   <?php require "./views/header.php" ?>
@@ -132,6 +133,7 @@
       <h1>
         Statistiques
       </h1>
+      <?php include "./views/filter.php"; ?>
       <div class="grap">
         <div class="grap-stat"> <img src="https://via.placeholder.com/800x350"></div>
        <div class="grap-cam"><img src="https://via.placeholder.com/300x300"></div>

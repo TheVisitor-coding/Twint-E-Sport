@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>liste Restaurants</title>
     <link rel="stylesheet" type="text/css" href="./public/accueil.css">
+    <link rel="stylesheet" type="text/css" href="./public/game-filter2.css">
 </head>
 <body>
     <?php require "./views/header.php"?>
@@ -59,6 +60,7 @@
             </div>
         </div>
     </section>
+    <?php require './views/filter.php'?>
     <section class="videos">
         <div class="videosplanning">
             <div class="videoLinks">

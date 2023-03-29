@@ -25,6 +25,9 @@ class TwintESportController{
     public function displayMatches(){
         require "./views/viewMatches.php";
     }
+    public function displayMatch(){
+        require "./views/viewMatch.php";
+    }
     public function displayPlayer(){
         require "./views/viewJoueur.php";
     }

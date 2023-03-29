@@ -7,10 +7,10 @@
 <body>
 	<header class="header">
     <div class="partie1">
-      <img alt="logo d'un T déformé" src="./public/logo-twint-e-sport.png" />
+      <a href="./"><img alt="logo d'un T déformé" src="./public/logo-twint-e-sport.png" /></a>
       <nav>
-        <a href="./?page=viewTournois">Compétitions</a>
-        <a href="#">Les jeux</a>
+        <a href="./?page=viewTournois">Tournois</a>
+        <a href="./?page=viewMatches">Matchs</a>
         <a href="./?page=viewJoueurs">Les joueurs</a>
       </nav>
     </div>

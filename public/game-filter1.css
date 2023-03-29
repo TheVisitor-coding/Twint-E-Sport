@@ -1,0 +1,104 @@
+:root {
+  --background-color: #2A2A2A;
+  --primary-color: #393939;
+  --secondary-color: #B47BE6;
+  --title-color: #C9C9C9;
+  --text-color: #707070;
+  --font : 'Roboto', sans-serif;
+}
+body{
+  background-color: var(--background-color);
+  margin : 0;
+}
+.container-games{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  flex-wrap : wrap;
+  align-items: center;
+  padding : 10px 0px;
+  /* max-width : 800px;
+  border-radius : 0 50px 50px 0; */
+  background-color: var(--primary-color);
+}
+.container-games #filter-text{
+  font-size : 1.5rem;
+  font-family : var(--font);
+  color : var(--title-color);
+  margin-left : 80px;
+  margin-right : 50px;
+}
+.container-games .games #all{
+  font-size : 1.5rem;
+  font-family : var(--font);
+  color : var(--text-color);
+  margin-left : 10px;
+  transition : all 200ms ease-in-out;
+}
+.container-games .games #all:hover{
+  color : var(--secondary-color);
+  cursor : pointer;
+}
+.container-games .games{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap : 50px;
+}
+.container-games .games .category .icon {
+  width: 150px;
+  height: 150px;
+  max-width: 100px;
+  max-height: 100px;
+  object-fit: contain;
+  fill: var(--text-color);
+  transition : all 200ms ease-in-out;
+}
+
+.container-games .games .icon:hover,
+.container-games .games .icon.highlighted {
+  cursor: pointer;
+  fill: var(--secondary-color);
+}
+.container-games .games .category{
+  display : flex;
+  flex-direction: column;
+  align-items: center;
+  position : relative;
+}
+.category #rl{
+  width : 50px;
+  height : 50px;
+  object-fit: contain;
+}
+.container-games #legends{
+  margin-left : 20px;
+}
+.category #lol{
+  width : 50px;
+  height : 50px;
+  object-fit: contain;
+}
+.category:nth-child(n+3) .tooltip{
+  top : 53px;
+}
+.tooltip {
+  visibility: hidden;
+  opacity: 0;
+  margin-block : 0px;
+  font-size : 1rem;
+  font-weight : 300;
+  font-family : var(--font);
+  color : var(--secondary-color);
+  position : absolute;
+  top : 80% ;
+  margin-top : 5px;
+}
+
+.category:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+
