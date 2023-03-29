@@ -1,0 +1,190 @@
+:root {
+  --background-color: #2A2A2A;
+  --primary-color: #393939;
+  --secondary-color: #B47BE6;
+  --title-color: #C9C9C9;
+  --text-color: #707070;
+  --font : 'Roboto', sans-serif;
+  --color-card : #949494;
+}
+body{
+  background-color: var(--background-color);
+  margin : 0;
+  padding: 0;
+}
+.head-page{
+  margin-left : 100px;
+}
+.head-page h1{
+  font-family: var(--font);
+  color : var(--title-color);
+  font-size : 2rem;
+  font-weight: 300;
+}
+.head-page p{
+  font-family: var(--font);
+  color : var(--text-color);
+  max-width : 1500px;
+}
+
+/* Bouton Inter-changeable */
+.head-page .button-tournament{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top : 20px;
+}
+.head-page .button-tournament button{
+  cursor: pointer;
+  border : none;
+  padding : 12px 35px;
+  font-size : 1rem;
+  font-family: var(--font);
+  font-weight : 600;
+  margin-top : 40px;
+  transition: background-color 800ms ease, opacity 800ms ease;
+  opacity: 1;
+}
+.head-page .button-tournament button.active {
+  background-color: var(--secondary-color);
+  color: var(--title-color);
+  opacity: 1;
+}
+.head-page .button-tournament button:not(.active) {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  opacity: 0.5;
+}
+.head-page .button-tournament button:first-of-type{
+  border-radius: 15px 0px 0px 15px ;
+}
+.head-page .button-tournament button:last-of-type{
+  border-radius: 0px 15px 15px 0px ;
+}
+
+/* Card Tournois */
+.tournois{
+  display :flex;
+  flex-direction : row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-top : 4%;
+  margin-left : 100px;
+}
+.tournois .card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primary-color);
+  max-width : 350px;
+  height : 380px;
+  max-height: 380px;
+  margin-right : 50px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+.tournois .card:nth-of-type(n+4){
+  margin-top : 30px;
+}
+.tournois .card img{
+  width: 350px;
+  height: 90px;
+  object-fit: cover;
+}
+.tournois .card h3{
+  font-family: var(--font);
+  color : var(--color-card);
+  font-size : 1.5rem;
+  font-weight: 500;
+  margin-top : 10px;
+  margin-block-end : 0px;
+
+}
+.tournois .card #date{
+  font-family: var(--font);
+  color : var(--color-card);
+  font-size : 0.8rem;
+  font-weight: 200;
+  margin-block-start : 0px;
+}
+.tournois .card .content{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap : 30px;
+  margin-top : 20px;
+}
+.tournois .card .content .tournoi-infos{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content : space-between;
+  gap : 7px;
+}
+.tournois .card .content .tournoi-infos p{
+  margin-block : 0px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color : var(--color-card);
+  font-weight: 400;
+  font-size : 1.5rem;
+}
+.tournois .card button{
+  margin-top : 25px;
+  cursor: pointer;
+  border: none;
+  background-color: var(--secondary-color);
+  color : var(--title-color);
+  font-size : 1.5rem;
+  font-weight: 500;
+  padding : 8px 90px;
+  border-radius: 25px;
+  transition: all 300ms ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+.tournois .card button:hover{
+  transform : translateY(-2px);
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  
+}
+
+/* Section Img Background */
+.background-img{
+  margin-top : 70px;
+}
+.background-img .img{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(./actu\ esport.jpg);
+  padding : 75px 0px;
+  background-size: cover;
+  background-position: center;
+  /* filter: blur(5px); 
+  filter : brightness(0.5); */
+}
+.background-img .img h3{
+  font-family: var(--font);
+  color : white;
+  font-size : 3rem;
+  font-weight: 300;
+  margin-block : 0px;
+}
+.background-img .img button{
+  margin-top : 25px;
+  cursor: pointer;
+  border: none;
+  background-color: var(--secondary-color);
+  color : white;
+  font-size : 1.5rem;
+  font-weight: 500;
+  padding : 10px 70px;
+  border-radius: 25px;
+  transition: all 300ms ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+.background-img .img button:hover{
+  transform : translateY(-2px);
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+

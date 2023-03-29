@@ -1,0 +1,228 @@
+:root {
+  --background-color: #2A2A2A;
+  --primary-color: #393939;
+  --secondary-color: #B47BE6;
+  --title-color: #C9C9C9;
+  --text-color: #707070;
+  --font : 'Roboto', sans-serif;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.background {
+  background-color: var(--background-color);
+  width: auto;
+  height: auto;
+}
+
+.Cart {
+  display: flex;
+  align-items: center;
+}
+
+.Cart .img {
+  flex: 1;
+  text-align: center;
+  margin-top: 120Px;
+  
+}
+
+.Cart .img img {
+  width: 350px;
+  height: auto;
+}
+
+.Cart .information {
+  flex: 1;
+  padding-left: 20px;
+}
+
+hr {
+  height: 3px;
+  width: 100%;
+  border-radius: 10px;
+  border: 0;
+  background: var(--secondary-color);
+}
+
+.hr hr{
+    height: 3px;
+    width: 250px; /* la largeur est réduite de 50% */
+    margin: 0 auto; /* centrer l'élément horizontalement */
+    border-radius: 10px;
+    border: 0;
+    background: var(--secondary-color);
+    margin-top: 5Px;
+  }
+  
+
+
+.information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 500px;
+  width: auto;
+  margin-right: 100px;
+  margin-top: 90Px;
+}
+
+.information h1:first-child {
+  float: left;
+  margin-top: 0;
+  color: var(--title-color);
+  font-size: 60px;
+}
+
+.information h1:hover{
+  color: yellow;
+}
+
+.information .image {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.information .image img {
+  max-width: 60px;
+  border-radius: 10%;
+  height: auto;
+}
+
+.information .image h1 {
+  margin: 0 0 0 10px;
+  color: var(--title-color);
+  font-size: 40px;
+
+}
+
+.age {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.age h2 {
+ color: var(--secondary-color);
+ margin-left: 70px;
+ font-size: 40px;
+}
+
+.age h3{
+  color: var(--text-color);
+  margin-right: 70px;
+  font-size: 40px;
+
+}
+
+.Team {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.Team h2 {
+  color: var(--secondary-color);
+ margin-left: 70px;
+ font-size: 40px;
+}
+
+.Team h3{
+  color: var(--text-color);
+  margin-right: 70px;
+  font-size: 40px;
+}
+
+
+
+.trophee {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -45Px;
+}
+
+.trophee H2 {
+  order: 1;
+ color: var(--secondary-color);
+ font-size: 52px;
+ margin-left: 170px;
+}
+
+.trophee H3 {
+  order: 2;
+  color: var(--text-color);
+  font-size: 36px;
+  margin-right: 170px;
+}
+
+
+.container {
+  width: 100%;
+  height: 600px;
+}
+
+.Statistiques {
+  text-align: center;
+  color: var(--secondary-color);
+  font-size: 46px;
+}
+
+
+.card {
+  width: 300px;
+  height: 150px;
+  border: 3px solid var(--secondary-color);
+  display: inline-block;
+  margin: 0 20px;
+  text-align: center;
+}
+
+.card:hover {
+  width: 300px;
+  height: 150px;
+  border: 3px solid var(--secondary-color);
+  background-color: var(--secondary-color);
+  display: inline-block;
+  margin: 0 20px;
+  text-align: center;
+  transition: all 300ms ease-in-out;
+
+}
+
+
+.card h2 {
+  font-size: 34px;
+  margin-top: 20px;
+  color: var(--title-color);
+}
+
+.card h2:hover {
+  font-size: 34px;
+  margin-top: 20px;
+  color: var(--title-color);
+}
+
+.card p {
+  font-size: 35px;
+  margin-top: 10px;
+  color: var(--text-color);
+}
+
+
+.hr2 hr{
+  height: 3px;
+  width: 250px; /* la largeur est réduite de 50% */
+  margin: 0 auto; /* centrer l'élément horizontalement */
+  border-radius: 10px;
+  border: 0;
+  background: var(--secondary-color);
+  margin-top: 40Px;
+  margin-bottom: 40Px;
+}
+
+
+

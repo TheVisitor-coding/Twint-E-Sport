@@ -1,0 +1,422 @@
+:root {
+  --background-color: #2A2A2A;
+  --primary-color: #393939;
+  --secondary-color: #B47BE6;
+  --title-color: #C9C9C9;
+  --text-color: #707070;
+  --font : 'Roboto', sans-serif;
+}
+
+
+
+
+.background{
+  background-color: var(--background-color);
+}
+
+.background-image {
+  background-image: url("background.png");
+  background-size: cover;
+  height: 43rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.background-image::before {
+  content: "";
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3); /* changer l'opacité ici */
+}
+
+.profile-container {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+  width: 300px;
+  margin-top: 100px;
+  margin: 0 auto; /* ajouter cette ligne */
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 10px solid var(--secondary-color);
+}
+
+.username {
+  margin-bottom: 20px;
+  font-size: 32px;
+  color: var(--text-color);
+}
+
+.edit-profile-button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.preferences-button,
+.statistics-button,
+.achievements-button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: #fff;
+  margin-bottom: 10px;
+  background-color: transparent;
+  border-bottom: 5px solid var(--secondary-color);
+}
+
+.preferences-button:hover,
+.statistics-button:hover,
+.achievements-button:hover {
+  background-color: var(--secondary-color);
+}
+
+.preferences {
+  color: var(--title-color);
+}
+
+.preferences h1 {
+  color: var(--title-color);
+}
+
+.preferences h2 {
+  color: var(--secondary-color);
+}
+
+
+
+.card {
+  display: inline-block;
+  width: 240px;
+  height: 205px;
+  margin: 20px;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+}
+
+.card h2 {
+  font-size: 18px;
+  text-align: center;
+  margin: 20px 0 0 0;
+  padding: 0 10px;
+  color: var(--text-color);
+}
+
+.vos-equipes {
+  display: flex;
+  align-items: center;
+}
+
+.vos-equipes h2 {
+  color: var(--secondary-color);
+  margin-left: 70px;
+  font-size: 35px;
+}
+
+.vos-equipes button {
+  float: left;
+  margin-left: 15px;
+}
+
+.card2 {
+  display: inline-block;
+  text-align: center;
+  padding: 20px 40px;
+}
+
+.card2 img {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  align-items: center;
+  object-fit: cover;
+}
+
+.card2 h2 {
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: center;
+  color: var(--text-color);
+}
+
+
+.vos-equipes button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 13px;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  color: #d2cbcb;
+  border-bottom: 2px solid var(--secondary-color);
+  transition:all 400ms ease-in-out;
+}
+
+.vos-equipes button:hover {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 13px;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  color: #d2cbcb;
+  background-color: var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+.Vos-équipes-favorites {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; /* Horizontally center the items /
+  align-items: center; / Vertically center the items */
+  padding: 20px;
+  }
+
+.fleche {
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.v-jeux-fav {
+  display: flex;
+  align-items: center;
+}
+
+.v-jeux-fav h2 {
+  color: var(--secondary-color);
+  margin-left: 70px;
+  font-size: 35px;
+}
+
+.v-jeux-fav button {
+  float: left;
+  margin-left: 15px;
+}
+.card1 img {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  align-items: center;
+  object-fit: cover;
+}
+
+.card1 h2 {
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: center;
+  color: var(--text-color);
+}
+
+
+.v-jeux-fav button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 13px;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  color: #d2cbcb;
+  border-bottom: 2px solid var(--secondary-color);
+  transition:all 400ms ease-in-out;
+}
+
+.v-jeux-fav button:hover {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 13px;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  color: #d2cbcb;
+  background-color: var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+.card1 {
+  display: inline-block;
+  text-align: center;
+  padding: 20px 40px;
+}
+
+
+.Vs-jeux-fav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; /* Horizontally center the items /
+  align-items: center; / Vertically center the items */
+  padding: 24px;
+  }
+
+
+
+  .vos-jeux-favoris {
+    display: flex;
+    align-items: center;
+
+  }
+  .vos-equipes h2 {
+  color: var(--secondary-color);
+    
+  }
+  .vos-jeux-favoris h2 {
+    color: var(--secondary-color);
+    margin-left: 70px;
+  font-size: 35px;
+  }
+
+  .vos-jeux-favoris button {
+    float: left;
+    margin-left: 15px;
+  }
+
+  .vos-jeux-favoris button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 13px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #d2cbcb;
+    border-bottom: 2px solid var(--secondary-color);
+    transition:all 400ms ease-in-out;
+  }
+  
+  .vos-jeux-favoris button:hover {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 13px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #d2cbcb;
+    background-color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+  }
+
+  .v-j-f {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+
+  .Statistiques h1{
+    color: var(--title-color);
+    margin-left: 70px;
+    font-size: 35px;
+  }
+
+
+
+  .preferences{
+    margin-left: 70px;
+    font-size: 35px;
+  }
+
+  .Succes h1{
+    color: var(--title-color);
+    margin-left: 70px;
+    font-size: 35px;
+  }
+
+  .Succes h2{
+    color: var(--text-color);
+    margin-left: 70px;
+    font-size: 35px;
+  }
+
+  
+  .grap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+   .grap-cam img {
+    border-radius: 50%;
+    margin-right: 100px;
+  }
+  .grap-stat img {
+    margin-left: 150px;
+  }
+  
+  .grap-stat {
+    flex-basis: 70%;
+  }
+  
+  .grap-cam {
+    flex-basis: 20%;
+  }
+  
+
+  .rank {
+    display: flex;
+    justify-content: center;
+    height: 350px;
+  }
+
+  .rank2 {
+    display: flex;
+    justify-content: center;
+    height: 350px;
+  }

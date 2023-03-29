@@ -11,6 +11,14 @@ if(empty($_GET['page'])){
     switch($_GET['page']){
         case "accueil" : $twintESport->displayAccueil();
         break;
+        case "viewTournois": $twintESport->displayTournois();
+        break;
+        case "viewMatches": $twintESport->displayMatches();
+        break;
+        case "viewJoueur": $twintESport->displayPlayer();
+        break;
+        case "viewJoueurs": $twintESport->displayPlayers();
+        break;
         case "viewSeConnecter" : $twintESport->afficherSeConnecter();
         break;
         case "connect" : $twintESport->connexion();

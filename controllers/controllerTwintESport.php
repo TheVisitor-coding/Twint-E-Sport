@@ -1,42 +1,58 @@
 <?php
 require_once "./models/classGame.php";
 require_once "./models/classUsers.php";
+require_once "./models/classVideo.php";
 
 class TwintESportController{
     private $games;
     private $users;
+    private $video;
 
     public function __construct(){
         $this->games = new Game;
         $this->users = new User;
+        $this->videos = new Video;
     }
 
     public function displayAccueil(){
+        $videos = $this->videos->getLives();
         $displayGames = $this->games->getGames();
         require "./views/viewAccueil.php";
     }
+    public function displayTournois(){
+        require "./views/viewTournoi.php";
+    }
+    public function displayMatches(){
+        require "./views/viewMatches.php";
+    }
+    public function displayPlayer(){
+        require "./views/viewJoueur.php";
+    }
+    public function displayPlayers(){
+        require "./views/viewJoueurs.php";
+    }
     public function displayUser(){
-        if (!empty($_SESSION['iduser'])){
+        if (isset($_SESSION['iduser'])){
             $iduser = $_SESSION['iduser'];
             $user = $this->users->getUserById($iduser);
-            require "./views/viewCompte.php";
+            require "./views/viewMonCompte.php";
         }else{
-            header ('Location: http://localhost/projets/Ann%C3%A9e%202/POO/exercice12-Projet/');
+            header ('Location: http://localhost/twint/Twint-E-Sport/');
             exit();
         }
     }
     public function modifyContent(){
-        if (!empty($_SESSION['iduser'])){
+        if (isset($_SESSION['iduser'])){
             if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $this->users->modifyUser($iduser, $_POST['email'], $_POST['mdp'], $_POST['prenom'], $_POST['nom'], $_POST['adresse'], $_POST['ville'], $_POST['codePostal']);
-                header ('Location: http://localhost/projets/Ann%C3%A9e%202/POO/exercice12-Projet/?page=viewMonCompte');
+                header ('Location: http://localhost/twint/Twint-E-Sport/?page=viewMonCompte');
                 exit();
             }else{
-                header ('Location: http://localhost/projets/Ann%C3%A9e%202/POO/exercice12-Projet/');
+                header ('Location: http://localhost/twint/Twint-E-Sport/');
                 exit();
             }
         }else{
-            header ('Location: http://localhost/projets/Ann%C3%A9e%202/POO/exercice12-Projet/');
+            header ('Location: http://localhost/twint/Twint-E-Sport/');
             exit();
         }
     }
@@ -46,14 +62,14 @@ class TwintESportController{
         session_unset();
         session_destroy();
 
-        header('Location: http://localhost/projets/Ann%C3%A9e%202/POO/exercice12-Projet/');
+        header('Location: http://localhost/twint/Twint-E-Sport/');
         exit();
     }
     public function displayAddUser(){
         if (empty($_SESSION['iduser'])){
             require './views/viewAddUser.php';
         }else{
-            header ('Location: http://localhost/projets/Ann%C3%A9e%202/POO/exercice12-Projet/');
+            header ('Location:http://localhost/twint/Twint-E-Sport/');
             exit();
         }
     }
@@ -64,10 +80,10 @@ class TwintESportController{
             $user = $this->users->getUserByEmail($email);
             $_SESSION['iduser'] = $user['id'];
 
-            header('Location: http://localhost/projets/Ann%C3%A9e%202/POO/exercice12-Projet/?page=viewMonCompte');
+            header('Location: http://localhost/twint/Twint-E-Sport/?page=viewMonCompte');
             exit();
         }else{
-            header ('Location: http://localhost/projets/Ann%C3%A9e%202/POO/exercice12-Projet/');
+            header ('Location: http://localhost/twint/Twint-E-Sport/');
             exit();
         }
     }
@@ -75,7 +91,7 @@ class TwintESportController{
         if (empty($_SESSION['iduser'])){
             require "./views/viewSeConnecter.php";
         }else {
-            header('Location: http://localhost/projets/Ann%C3%A9e%202/POO/exercice12-Projet/');
+            header('Location: http://localhost/twint/Twint-E-Sport/');
         }
     }
     public function connexion() {
@@ -92,7 +108,7 @@ class TwintESportController{
                     $_SESSION['iduser'] = $user['id'];
                     
                     // Rediriger l'utilisateur vers la page d'accueil
-                    header('Location: http://localhost/projets/Ann%C3%A9e%202/POO/exercice12-Projet/?page=viewMonCompte');
+                    header('Location: http://localhost/twint/Twint-E-Sport/?page=viewMonCompte');
                 }else {
                     // Afficher un message d'erreur
                     echo 'Adresse e-mail ou mot de passe incorrect';
@@ -102,7 +118,7 @@ class TwintESportController{
             }
         } else {
             // Afficher le formulaire de connexion
-            header('Location: http://localhost/localhost/projets/Ann%C3%A9e%202/POO/exercice12-Projet/?page=viewSeConnecter');
+            header('Location: http://localhost/twint/Twint-E-Sport/?page=viewSeConnecter');
         }
     }
 }

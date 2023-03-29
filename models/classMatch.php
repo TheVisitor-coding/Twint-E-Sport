@@ -3,7 +3,7 @@ require_once "classModel.php";
 
 class Match extends Model{
     public function getMatches(){
-        $req1 = $this->getBdd()->prepare("SELECT * FROM article ORDER BY categorie");
+        $req1 = $this->getBdd()->prepare("SELECT * FROM matches");
         $req1->execute();
         return $articles = $req1->fetchAll();
     }

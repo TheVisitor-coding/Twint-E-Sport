@@ -3,7 +3,7 @@ require_once "classModel.php";
 
 class Tournoi extends Model{
     public function getTournois(){
-        $req1 = $this->getBdd()->prepare("SELECT * FROM article ORDER BY categorie");
+        $req1 = $this->getBdd()->prepare("SELECT * FROM tournois");
         $req1->execute();
         return $articles = $req1->fetchAll();
     }

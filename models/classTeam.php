@@ -3,7 +3,7 @@ require_once "classModel.php";
 
 class Team extends Model{
     public function getPTeams(){
-        $req1 = $this->getBdd()->prepare("SELECT * FROM article ORDER BY categorie");
+        $req1 = $this->getBdd()->prepare("SELECT * FROM teams");
         $req1->execute();
         return $articles = $req1->fetchAll();
     }

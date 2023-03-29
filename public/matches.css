@@ -1,0 +1,281 @@
+:root {
+    --background-color: #2A2A2A;
+    --primary-color: #393939;
+    --secondary-color: #B47BE6;
+    --title-color: #C9C9C9;
+    --text-color: #707070;
+    --font : 'Roboto', sans-serif;
+  }
+  body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #393939;
+  }
+
+* {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+   }
+
+h2{
+    color: #B47BE6;
+    font-size: 3rem;
+}
+
+p{
+    color:var(--text-color);
+    color: #707070;
+}
+
+.score{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    background-color: #2A2A2A;
+}
+
+
+
+.mandatory, .indyspensable {
+    border: #B47BE6 3px solid;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%
+}
+
+.team_1{
+    margin-right: 70px;
+}
+.team_2{
+    margin-left: 70px;
+}
+
+.count{
+    font-size: 4.5rem;
+}
+
+
+.quick_vue{
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    align-items:start;
+    
+}
+
+.map{
+    padding-left: 100px;
+}
+
+.img_map{
+    border: black 10px solid;
+    height: 600px;
+    width: 600px;
+}
+
+.quick_info{
+    margin-top: -30px;
+}
+
+.quick_1, .quick_2{
+    margin-left: 100px;
+    background-color: #2A2A2A;
+    padding: 0px 40px 40px 40px;
+
+}
+
+.quick_1 h2{
+    margin-bottom: -1px;
+    padding-top: 10px;
+}
+
+.teams{
+    margin-top: 35px;
+}
+
+.quick_2{
+    text-align: center;
+}
+.quick_2 h2{
+    padding-top: 20px;
+}
+
+.quick_1 p, .quick_2 p{
+    margin-top: -8px;
+    font-size: 2rem;
+}
+
+/* .progressbar-wrapper {
+    color: white;
+  } */
+  
+  .progressbar_1 {
+    padding: 0.5rem;
+    text-align: right;
+    border-radius: 25px;
+    width: 15%;
+    background-color: rgb(38, 126, 226);
+    margin-top: -18px;
+    margin-bottom: 18px;
+
+  }
+
+  .progressbar_2 {
+    padding: 0.5rem;
+    text-align: right;
+    border-radius: 25px;
+    width: 70%;
+    background-color: rgb(195, 38, 226);
+    margin-top: -18px;
+
+  }
+  
+  .statistiques{
+    background-color: #2A2A2A;
+  }
+  .title_stat{
+    text-align: center;
+    margin-top: 50px;
+  }
+  .title_stat h2{
+    padding-top: 50px;
+  }
+  .titles_tab{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .joueurs, .succès{
+    color: #707070;
+    font-size: 3rem;
+    
+  }
+.tab{
+    display: flex;
+    align-items:start;
+}
+
+.team{
+    margin-left: 15%;
+}
+
+.name_team{
+    font-size: 2rem; 
+}
+.blueteam{
+    color: rgb(48, 124, 238);
+}
+.player_1{
+    display: flex;
+    align-items: center;
+    margin-bottom: -20px;
+}
+.img_player_1{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.player_1 p{
+    font-size: 2rem;
+    color: #C9C9C9;
+    margin-left: 15px;
+    
+}
+img {
+    object-fit: cover;
+}
+
+
+.point{
+  
+    margin-left: 15%;
+    margin-top: -20px;
+    
+}
+
+
+
+.KDA{
+    display: flex;
+    font-size: 2.5rem;
+    justify-content: center;
+    justify-content:space-evenly ;
+    gap:17px ;
+}
+
+
+table {
+    border-collapse: separate;
+  border-spacing: 30px 40px ;
+  margin-top: -10px;
+
+  }
+
+  
+td{
+    color: #C9C9C9;
+    text-align: center;
+    font-size: 2rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    min-width: 45px ;
+    min-height: 45px; 
+    background-color: #393939;
+
+}
+tr{
+    margin-bottom: 50px;
+}
+
+.tab_success{
+    background-color: #575757;
+    Margin-left:230px;
+    font-size: 2rem;
+    margin-top: 150px;
+    border-style: inset;
+}
+.tab_success p{
+    margin: 35px;
+    color:#C9C9C9;
+    text-align: center;
+  
+}
+.objectif{
+    display: flex;
+    align-items: center;
+    margin-left: 15%;
+    margin-top: 30px;
+}
+.objectif p {
+    font-size: 2rem;
+}
+.circles {
+    display: flex;
+}
+
+.circle_r {
+    background: rgb(192, 23, 23);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-left: 25px;
+    border-style: outset;
+}
+.circle_b {
+    background: rgb(48, 124, 238);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-left: 25px;
+    border-style: outset;
+}
+.circle_g {
+    background: rgb(124, 124, 124);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-left: 25px;
+    border-style: outset;
+}

@@ -1,41 +1,412 @@
-body{
-    background-color: #eee;
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #2a2a2a;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.actualite{
+    width: 100%;
+    display: flex;
+}
+.actualite .encadrement{
+    width:70%;
+    margin: 100px auto;
+    background-color: #393939;
+    border-radius: 45px;
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+}
+.actualite .encadrement h1 {
+    color: #B47BE6;
+    font-size: 3vw;
+    margin-left: 6vw;
+}
+.actualite .encadrement .actu1 {
+    display: flex;
+    flex-direction: row;
+    width:83%;
+    margin: 10px auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.actualite .encadrement .actu1 .img {
+    width: 45%;
+}
+.actualite .encadrement .actu1 .img img{
+    width: 100%;
+}
+.actualite .encadrement .actu1 .description {
+    width:45%;
+    display: flex;
+    flex-direction: column;
+}
+.actualite .encadrement .actu1 .description h2 {
+    font-size: 2vw;
+    margin:0px;
+    margin-bottom: 10px;
+    color: #C9C9C9;
+}
+.actualite .encadrement .actu1 .description p:nth-child(2){
+    color: #C9C9C9;
+    font-size: 1vw;
+}
+.actualite .encadrement .actu1 .description .time{
+    color: #B47BE6;
+    font-size: 1vw;
+}
+.actualite .encadrement .actu1 .description a{
+    color: #C9C9C9;
+    font-size: 1vw;
+}
+.actualite .encadrement .petitesactus {
+    display: flex;
+    flex-direction: row;
+    width:83%;
+    margin: 50px auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.actualite .encadrement .petitesactus .actumini {
+    width:20%;
+    display: flex;
+    flex-direction: column;
+}
+.actualite .encadrement .petitesactus .actumini img {
+    width:11.5vw;
+}
+.actualite .encadrement .petitesactus .actumini h3{
+    color: #C9C9C9;
+    font-size: 1.5vw;
+}
+.actualite .encadrement .petitesactus .actumini .timelink {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #C9C9C9;
+    font-size: 1vw;
+}
+.actualite .encadrement .petitesactus .actumini a{
+    color: #C9C9C9;
+    font-size: 1vw;
+}
+.videos{
+    width: 100%;
+}
+.videos .videosplanning{
+    margin: 50px auto;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.videos .videosplanning .videoLinks {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+}
+.videos .videosplanning .videoLinks h2{
+    font-size: 2vw;
+    margin:0px;
+    margin-bottom: 10px;
+    color: #B47BE6;
+}
+.videos .videosplanning .videoLinks .live {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.videos .videosplanning .videoLinks .live img {
+    width:4%;
+}
+.videos .videosplanning .videoLinks .live .livemini {
+    width: 39%;
+    display: flex;
+    flex-direction: column;
+}
+.videos .videosplanning .videoLinks .live .livemini a{
+    text-decoration: none;
+}
+.videos .videosplanning .videoLinks .live .livemini img {
+    width: 100%;
+}
+.videos .videosplanning .videoLinks .live .livemini h3{
+    color: #C9C9C9;
+    font-size: 1.5vw;
+}
+.videos .videosplanning .videoLinks .replay {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.videos .videosplanning .videoLinks .replay img {
+    width:4%;
+}
+.videos .videosplanning .videoLinks .replay .replaymini {
+    width: 39%;
+    display: flex;
+    flex-direction: column;
+}
+.videos .videosplanning .videoLinks .replay .replaymini a{
+    text-decoration: none;
+}
+.videos .videosplanning .videoLinks .replay .replaymini img {
+    width: 100%;
+}
+.videos .videosplanning .videoLinks .replay .replaymini h3{
+    color: #C9C9C9;
+    font-size: 1.5vw;
+}
+.videos .videosplanning .planning {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #393939;
+}
+.videos .videosplanning .planning .titre {
+    font-size: 2vw;
+    margin:0px;
+    margin-bottom: 10px;
+    color: #C9C9C9;
+}
+.videos .videosplanning .planning .h3 {
+    width: 90%;
+    color: #C9C9C9;
+    font-size: 1.5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.videos .videosplanning .planning .game {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.videos .videosplanning .planning .game .match {
+    padding-left: 40%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.videos .videosplanning .planning .game .match .logolive {
+    position: absolute;
+    left:0;
+    width: 25%;
+    z-index: 1;
+}
+.videos .videosplanning .planning .game .match .logolive img{
+    width: 100%;
+}
+.videos .videosplanning .planning .game .match .equipes {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+}
+.videos .videosplanning .planning .game .match .equipes .equipe1 {
+    position: relative;
+    z-index: 0;
+    left: -66.5%;
+    width: 100%;
+    padding-left: 66.5%;
+    height: 3vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.videos .videosplanning .planning .game .match .equipes .equipe1 .ekip {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+.videos .videosplanning .planning .game .match .equipes .equipe1 .ekip img {
+    width: 15%;
+}
+.videos .videosplanning .planning .game .match .equipes .equipe1 .ekip h4{
+    font-size: 1vw;
+    color: #ffffff;
+}
+.videos .videosplanning .planning .game .match .equipes .equipe1 span{
+    margin-right: 2vw;
+    font-size: 1vw;
+    color: #ffffff;
+}
+.videos .videosplanning .planning .game .match .equipes .equipe2 {
+    position: relative;
+    z-index: 0;
+    left: -66.5%;
+    width: 100%;
+    padding-left: 66.5%;
+    background-color: #4B4B4B;
+    height: 3vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.videos .videosplanning .planning .game .match .equipes .equipe2 .ekip {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+.videos .videosplanning .planning .game .match .equipes .equipe2 .ekip img {
+    width: 15%;
+}
+.videos .videosplanning .planning .game .match .equipes .equipe2 .ekip h4{
+    font-size: 1vw;
+    color: #ffffff;
+}
+.videos .videosplanning .planning .game .match .equipes .equipe2 span{
+    margin-right: 2vw;
+    font-size: 1vw;
+    color: #ffffff;
+}
+.videos .videosplanning .planning .voirplus {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #693894;
+}
+.videos .videosplanning .planning .voirplus p {
+    font-size: 1vw;
+    margin-left: 1.5vw;
+    color: #ffffff  
+}
+.videos .videosplanning .planning .voirplus img {
+    width: 3%;
+    margin-right: 7%;
+}
+.teams {
+    width: 100%;
+}
+.teams .ekip {
+    width: 70%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+}
+.teams .ekip h2 {
+    font-size: 2vw;
+    margin:0px;
+    margin-bottom: 10px;
+    color: #B47BE6;
+}
+.teams .ekip .encadrementequipesmini{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.teams .ekip .encadrementequipesmini .equipemini {
+    width: 25%;
+    background-color: #393939;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 2vw;
+}
+.teams .ekip .encadrementequipesmini .equipemini img {
+    width: 22%;
+}
+.teams .ekip .encadrementequipesmini .equipemini h3{
+    margin-right: 2vw;
+    color: #ffffff;
+    font-size: 1.5vw;
+}
+.players {
+    width:100%;
+}
+.players .joueurs {
+    width: 70%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+}
+.players .joueurs h2 {
+    font-size: 2vw;
+    margin:0px;
+    margin-bottom: 10px;
+    color: #B47BE6;
+}
+.players .joueurs .joueursencadrement {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.players .joueurs .joueursencadrement .fichejoueur {
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    align-items: center;
+}
+.players .joueurs .joueursencadrement .fichejoueur img {
+    width: 60%;
+}
+.players .joueurs .joueursencadrement .fichejoueur h3 {
+    color: #ffffff;
+    font-size: 1.5vw;
+    margin: 7px 0px;
+}
+.competitions {
+    width: 100%;
+}
+.competitions .compet {
+    width: 70%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+}
+.competitions .compet h2 {
+    font-size: 2vw;
+    margin:0px;
+    margin-bottom: 10px;
+    color: #B47BE6;
+}
+.competitions .compet .encadrementcompetmini{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.competitions .compet .encadrementcompetmini .competmini {
+    width: 15%;
+    background-color: #393939;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75vw 1.5vw;
+}
+.competitions .compet .encadrementcompetmini .competmini img {
+    width: 30%;
+}
+.competitions .compet .encadrementcompetmini .competmini h3{
+    color: #ffffff;
+    font-size: 1.5vw;
 }
 .card:hover .header-card .image{
     height:275px;
-}
-.card{
-    width:20%;
-    margin:1%;
-    padding:1%;
-    display:inline-block;
-    border-radius:6%;
-    height:425px;
-    vertical-align:top;
-    background-color:white;
-    text-align:center;
-}
-.image{
-    height:250px;
-}
-.titre{
-    font-size:25px;
-    text-decoration:none;
-    color:black;
-}
-.prix{
-    display: flex;
-    justify-content:center;
-    font-weight:bold;
-    font-size:25px;
-    text-decoration:none;
-    color:black;
-}
-.card-middle{
-  height:25%;
-}
-.desc{
-  height:20%;
-  text-decoration:none;
-  color:black;
 }
