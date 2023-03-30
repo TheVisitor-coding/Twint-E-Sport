@@ -1,4 +1,4 @@
-tournoi<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -10,6 +10,7 @@ tournoi<!DOCTYPE html>
   <link href="./public/game-filter1.css" rel="stylesheet">
 </head>
 <body>
+  <?php require "./views/header.php" ?>
   <!-- Filter Games -->
   <script src="./public/filter.js"></script>
   <div class="container-games">
@@ -176,4 +177,5 @@ tournoi<!DOCTYPE html>
   </section>
   <!-- value=""<?php echo date('Y-m-d'); ?>"" Pour la valeur de la date d'aujourd'hui formulaire -->
 </body>
+<?php require "./views/footer.php" ?>
 </html>
