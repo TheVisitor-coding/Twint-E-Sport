@@ -3,16 +3,13 @@ require_once "classModel.php";
 
 class User extends Model{
 
-    public function addUser($email,$mdp,$prenom,$nom,$adresse,$ville,$codePostal){
-        $req0 = $this->getBdd()->prepare("INSERT INTO `users`(`email`, `mdp`, `prenom`, `nom`, `adresse`, `ville`, `codePostal`) VALUES (:email,:mdp,:prenom,:nom,:adresse,:ville,:codePostal)");
+    public function addUser($email,$mdp,$prenom,$nom){
+        $req0 = $this->getBdd()->prepare("INSERT INTO `users`(`email`, `mdp`, `prenom`, `nom`) VALUES (:email,:mdp,:prenom,:nom)");
         $req0->execute([
             'email'=>$email,
             'mdp'=>$mdp,
             'prenom'=>$prenom,
-            'nom'=>$nom,
-            'adresse'=>$adresse,
-            'ville'=>$ville,
-            'codePostal'=>$codePostal,
+            'nom'=>$nom
         ]);
         return $newUser = $req0->fetch();
     }

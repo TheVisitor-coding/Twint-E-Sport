@@ -134,6 +134,7 @@ p{
   
   .statistiques{
     background-color: #2A2A2A;
+    width: 100%;
   }
   .title_stat{
     text-align: center;
@@ -154,7 +155,9 @@ p{
   }
 .tab{
     display: flex;
-    align-items:start;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
 }
 
 .team{
@@ -231,7 +234,6 @@ tr{
 
 .tab_success{
     background-color: #575757;
-    Margin-left:230px;
     font-size: 2rem;
     margin-top: 150px;
     border-style: inset;

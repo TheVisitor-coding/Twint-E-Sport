@@ -10,6 +10,7 @@
 <body>
   <?php include "./views/header.php";?>
   <div id ="body">
+    <h1>Connexion</h1>
     <form id="form" action="./?page=connect" method="POST">
     <input type="email" name="email" class="inputConnect" placeholder="ton email"/><br/>
     <input type="password" name="mdp" class="inputConnect" placeholder="ton mot de passe"/><br/>

@@ -10,7 +10,6 @@
 body{
   background-color: var(--background-color);
   margin : 0;
-  padding: 0;
 }
 .head-page{
   margin-left : 100px;
@@ -25,16 +24,17 @@ body{
   font-family: var(--font);
   color : var(--text-color);
   max-width : 1500px;
+  font-size : 1.2rem
 }
 
 /* Bouton Inter-changeable */
-.head-page .button-tournament{
+.button-tournament{
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-top : 20px;
 }
-.head-page .button-tournament button{
+.button-tournament button{
   cursor: pointer;
   border : none;
   padding : 12px 35px;
@@ -42,23 +42,23 @@ body{
   font-family: var(--font);
   font-weight : 600;
   margin-top : 40px;
-  transition: background-color 800ms ease, opacity 800ms ease;
+  transition: background-color 500ms ease, opacity 500ms ease;
   opacity: 1;
 }
-.head-page .button-tournament button.active {
+.button-tournament button.active {
   background-color: var(--secondary-color);
   color: var(--title-color);
   opacity: 1;
 }
-.head-page .button-tournament button:not(.active) {
+.button-tournament button:not(.active) {
   background-color: var(--primary-color);
   color: var(--text-color);
   opacity: 0.5;
 }
-.head-page .button-tournament button:first-of-type{
+.button-tournament button:first-of-type{
   border-radius: 15px 0px 0px 15px ;
 }
-.head-page .button-tournament button:last-of-type{
+.button-tournament button:last-of-type{
   border-radius: 0px 15px 15px 0px ;
 }
 
@@ -187,4 +187,6 @@ body{
   transform : translateY(-2px);
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
+
+/* Section Création de tournoi */
 

@@ -40,7 +40,11 @@ p{
     max-width: 100%;
     width: 50px;
 }
-
+.submitBtn{
+  background-color: rgba(0,0,0,0);
+  border: none;
+  border-radius: 100%;
+}
 .search_bar{
     display: flex;
     align-items: center;

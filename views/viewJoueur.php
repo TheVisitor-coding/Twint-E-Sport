@@ -16,23 +16,23 @@
         <img src="./public/2.jpg">
       </div>
       <div class="information">
-        <h1>Yellow star</h1>
+        <h1><?= $data['MatchName']?></h1>
         <div class="image">
-          <img src="./public/1.jpg">
-          <h1>Bora Kim</h1>
+          <!-- <img src="./public/1.jpg"> -->
+          <h1><?= $data['FirstName']?> <?= $data['LastName']?></h1>
         </div>
         <div class="hr">
           <hr>
         </div>
         
         <div class="age">
-          <h2>Age</h2>
-          <h3>18 ans</h3>
+          <h2>Nationnalité</h2>
+          <h3><?= $data['Nationality']?></h3>
         </div>
         <hr>
         <div class="Team">
-          <h2>Team</h2>
-          <h3>Prodigy</h3>
+          <h2>Rôle</h2>
+          <h3><?= $data['Position']?></h3>
         </div>
         <hr>
       </div>

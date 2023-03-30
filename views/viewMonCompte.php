@@ -166,6 +166,9 @@
       </div>
     </div>
   </div>
+  <section class="sectiondeconnect">
+    <div class="deconnect"><a href="./?page=seDeconnecter"><button id="button">Se déconnecter</button></a></div>
+  </deconnect>
   
   <?php require "./views/footer.php" ?>
 </body>

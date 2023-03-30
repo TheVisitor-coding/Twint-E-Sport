@@ -82,33 +82,27 @@
                 <div class="tab_team">
     
                     <div class="player_1">
-                        <a href="http://localhost/twint/Twint-E-Sport/?page=viewJoueur">
-                            <img src="./public/Carljr.jpg" alt="CarlJr" class="img_player_1"></a>  
+                            <img src="./public/Carljr.jpg" alt="CarlJr" class="img_player_1"> 
                             <p class="nom_joueur">CarlJr</p>
                     </div>
     
                     <div class="player_1">
-                        <a href="http://localhost/twint/Twint-E-Sport/?page=viewJoueur">
-                            <img src="./public/yellowstar.jpg" alt="Yellowstar" class="img_player_1"></a>  
+                            <img src="./public/yellowstar.jpg" alt="Yellowstar" class="img_player_1">  
                             <p class="nom_joueur">YellowStar</p>
                     </div>
     
                     <div class="player_1">
-                        <a href="http://localhost/twint/Twint-E-Sport/?page=viewJoueur">
-                            <img src="./public/zerator.jpg" alt="Zerator" class="img_player_1"></a>  
+                            <img src="./public/zerator.jpg" alt="Zerator" class="img_player_1">
                             <p class="nom_joueur">Zerator</p>  
                     </div>
     
                     <div class="player_1">
-                        <a href="http://localhost/twint/Twint-E-Sport/?page=viewJoueur">
-                            <img src="./public/domingo.webp" alt="Domingo" class="img_player_1"></a>  
+                            <img src="./public/domingo.webp" alt="Domingo" class="img_player_1"> 
                             <p class="nom_joueur">Domingo</p>
                     </div>
     
                     <div class="player_1">
-                        <a href="http://localhost/twint/Twint-E-Sport/?page=viewJoueur">
                             <img src="./public/papesan.jpg" alt="Papesan" class="img_player_1">
-                        </a>
                             <p class="nom_joueur">PapeSan</p>
                     </div>
                 </div>
@@ -210,32 +204,27 @@
                 <div class="tab_team">
     
                     <div class="player_1">
-                        <a href="http://localhost/twint/Twint-E-Sport/?page=viewJoueur">
-                            <img src="./public/Carljr.jpg" alt="CarlJr" class="img_player_1"></a>  
+                            <img src="./public/Carljr.jpg" alt="CarlJr" class="img_player_1">
                             <p class="nom_joueur">CarlJr</p>  
                     </div>
     
                     <div class="player_1">
-                        <a href="http://localhost/twint/Twint-E-Sport/?page=viewJoueur">
-                            <img src="./public/yellowstar.jpg" alt="Yellowstar" class="img_player_1"></a>  
+                            <img src="./public/yellowstar.jpg" alt="Yellowstar" class="img_player_1">
                             <p class="nom_joueur">YellowStar</p>
                     </div>
     
                     <div class="player_1">
-                        <a href="http://localhost/twint/Twint-E-Sport/?page=viewJoueur">
-                            <img src="./public/zerator.jpg" alt="Zerator" class="img_player_1"></a>  
+                            <img src="./public/zerator.jpg" alt="Zerator" class="img_player_1"> 
                             <p class="nom_joueur">Zerator</p>
                     </div>
     
                     <div class="player_1">
-                        <a href="http://localhost/twint/Twint-E-Sport/?page=viewJoueur">
-                            <img src="./public/domingo.webp" alt="Domingo" class="img_player_1"></a>  
+                            <img src="./public/domingo.webp" alt="Domingo" class="img_player_1"> 
                             <p class="nom_joueur">Domingo</p>
                     </div>
     
                     <div class="player_1">
-                        <a href="http://localhost/twint/Twint-E-Sport/?page=viewJoueur">
-                            <img src="./public/papesan.jpg" alt="Papesan" class="img_player_1"></a>  
+                            <img src="./public/papesan.jpg" alt="Papesan" class="img_player_1"> 
                             <p class="nom_joueur">PapeSan</p>
                     </div>
                 </div>

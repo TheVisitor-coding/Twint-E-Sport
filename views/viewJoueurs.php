@@ -21,11 +21,10 @@
         <div class="section_search">
 
              <div class="search_bar">
-
-                <img src="./public/search.png" alt="search" class="icon_search">
-
-                <input type="text" placeholder="     Rechercher un joueur" class="search">
-
+                <form class="form" action="./?page=viewJoueurs" method="POST">
+                <button class="submitBtn" type="submit"><img src="./public/search.png" alt="search" class="icon_search"></button>
+                <input type="text" placeholder="Rechercher un joueur" name="name" class="search">
+                </form>
             </div>
 
             <div class="classified">
@@ -51,87 +50,18 @@
         
 
           <div class="block">
+            <?php foreach ($data as $datas){?>
+            <a href="./?page=viewJoueur&id=<?= $datas['PlayerId']?>">
+              <div class="container">
+                <img src="./public/yellow.jpg" alt="Avatar" class="image">
+                <div class="overlay">
+                  <div class="text"><?= $datas['MatchName']?></div>
+                  <div class="text2">Joueur League of Legends </div>
+                </div>
+              </div>
+            </a>
+            <?php } ?>
             
-            <a href="./?page=viewJoueur">
-              <div class="container">
-                <img src="./public/yellow.jpg" alt="Avatar" class="image">
-                <div class="overlay">
-                  <div class="text">YellowStar </div>
-                  <div class="text2">Joueur League of Legends </div>
-                </div>
-              </div>
-            </a>
-            
-            <a href="./?page=viewJoueur">
-              <div class="container">
-                <img src="./public/yellow.jpg" alt="Avatar" class="image">
-                <div class="overlay">
-                  <div class="text">YellowStar </div>
-                  <div class="text2">Joueur League of Legends </div>
-                </div>
-              </div>
-            </a>
-
-            <a href="./?page=viewJoueur">
-              <div class="container">
-                <img src="./public/yellow.jpg" alt="Avatar" class="image">
-                <div class="overlay">
-                  <div class="text">YellowStar </div>
-                  <div class="text2">Joueur League of Legends </div>
-                </div>
-              </div>
-            </a>
-
-            <a href="./?page=viewJoueur">
-              <div class="container">
-                <img src="./public/yellow.jpg" alt="Avatar" class="image">
-                <div class="overlay">
-                  <div class="text">YellowStar </div>
-                  <div class="text2">Joueur League of Legends </div>
-                </div>
-              </div>
-            </a>
-
-            <a href="./?page=viewJoueur">
-              <div class="container">
-                <img src="./public/yellow.jpg" alt="Avatar" class="image">
-                <div class="overlay">
-                  <div class="text">YellowStar </div>
-                  <div class="text2">Joueur League of Legends </div>
-                </div>
-              </div>
-            </a>
-            
-            <a href="./?page=viewJoueur">
-              <div class="container">
-                <img src="./public/yellow.jpg" alt="Avatar" class="image">
-                <div class="overlay">
-                  <div class="text">YellowStar </div>
-                  <div class="text2">Joueur League of Legends </div>
-                </div>
-              </div>
-            </a>
-
-            <a href="./?page=viewJoueur">
-              <div class="container">
-                <img src="./public/yellow.jpg" alt="Avatar" class="image">
-                <div class="overlay">
-                  <div class="text">YellowStar </div>
-                  <div class="text2">Joueur League of Legends </div>
-                </div>
-              </div>
-            </a>
-
-            <a href="./?page=viewJoueur">
-              <div class="container">
-                <img src="./public/yellow.jpg" alt="Avatar" class="image">
-                <div class="overlay">
-                  <div class="text">YellowStar </div>
-                  <div class="text2">Joueur League of Legends </div>
-                </div>
-              </div>
-            </a>
-
         </div>
 
       </div>

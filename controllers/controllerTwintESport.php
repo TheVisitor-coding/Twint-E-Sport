@@ -40,7 +40,7 @@ class TwintESportController{
             $user = $this->users->getUserById($iduser);
             require "./views/viewMonCompte.php";
         }else{
-            header ('Location: http://localhost/twint/Twint-E-Sport/');
+            header ('Location: ./');
             exit();
         }
     }
@@ -48,14 +48,14 @@ class TwintESportController{
         if (isset($_SESSION['iduser'])){
             if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $this->users->modifyUser($iduser, $_POST['email'], $_POST['mdp'], $_POST['prenom'], $_POST['nom'], $_POST['adresse'], $_POST['ville'], $_POST['codePostal']);
-                header ('Location: http://localhost/twint/Twint-E-Sport/?page=viewMonCompte');
+                header ('Location: ./?page=viewMonCompte');
                 exit();
             }else{
-                header ('Location: http://localhost/twint/Twint-E-Sport/');
+                header ('Location: ./');
                 exit();
             }
         }else{
-            header ('Location: http://localhost/twint/Twint-E-Sport/');
+            header ('Location: ./');
             exit();
         }
     }
@@ -65,28 +65,28 @@ class TwintESportController{
         session_unset();
         session_destroy();
 
-        header('Location: http://localhost/twint/Twint-E-Sport/');
+        header('Location: ./');
         exit();
     }
     public function displayAddUser(){
         if (empty($_SESSION['iduser'])){
             require './views/viewAddUser.php';
         }else{
-            header ('Location:http://localhost/twint/Twint-E-Sport/');
+            header ('Location:./');
             exit();
         }
     }
-    public function addUser($email,$mdp,$prenom,$nom,$adresse,$ville,$codePostal){
+    public function addUser($email,$mdp,$prenom,$nom){
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            $this ->users->addUser($email,$mdp,$prenom,$nom,$adresse,$ville,$codePostal);
+            $this ->users->addUser($email,$mdp,$prenom,$nom);
 
             $user = $this->users->getUserByEmail($email);
             $_SESSION['iduser'] = $user['id'];
 
-            header('Location: http://localhost/twint/Twint-E-Sport/?page=viewMonCompte');
+            header('Location: ./?page=viewMonCompte');
             exit();
         }else{
-            header ('Location: http://localhost/twint/Twint-E-Sport/');
+            header ('Location: ./');
             exit();
         }
     }
@@ -94,7 +94,7 @@ class TwintESportController{
         if (empty($_SESSION['iduser'])){
             require "./views/viewSeConnecter.php";
         }else {
-            header('Location: http://localhost/twint/Twint-E-Sport/');
+            header('Location: ./');
         }
     }
     public function connexion() {
@@ -111,7 +111,7 @@ class TwintESportController{
                     $_SESSION['iduser'] = $user['id'];
                     
                     // Rediriger l'utilisateur vers la page d'accueil
-                    header('Location: http://localhost/twint/Twint-E-Sport/?page=viewMonCompte');
+                    header('Location: ./?page=viewMonCompte');
                 }else {
                     // Afficher un message d'erreur
                     echo 'Adresse e-mail ou mot de passe incorrect';
@@ -121,7 +121,7 @@ class TwintESportController{
             }
         } else {
             // Afficher le formulaire de connexion
-            header('Location: http://localhost/twint/Twint-E-Sport/?page=viewSeConnecter');
+            header('Location: ./?page=viewSeConnecter');
         }
     }
 }

@@ -10,23 +10,17 @@
 <body>
     <?php require "./views/header.php"?>
     <div id="body">
-        <h1>Bonjour, Ici tu peux te créer un compte</h1>
+        <h1>Sign in</h1>
 
         <form id="form" action="./?page=addAccount" method="post">
-            <label for="prenom">Votre Prénom* :</label><br/>
-                <input class="inputConnect" type="text" name="prenom" require/><br/>
-            <label for="nom">Votre Nom* :</label><br/>
-                <input class="inputConnect" type="text" name="nom"require/><br/>
-            <label for="email">Votre Email* :</label><br/>
-                <input class="inputConnect" type="email" name="email" require/><br/>
-            <label for="mdp">Votre Mot de Passe* :</label><br/>
-                <input class="inputConnect" type="password" name="mdp" require/><br/>
-            <label for="adresse">Votre Adresse Complète :</label><br/>
-                <input class="inputConnect" type="text" name="adresse"/><br/>
-            <label for="ville">Votre Ville :</label><br/>
-                <input class="inputConnect" type="text" name="ville"/><br/>
-            <label for="codePostal">Votre Code Postal :</label><br/>
-                <input class="inputConnect" type="text" name="codePostal"/><br/>
+            <label for="prenom">Votre Prénom* :</label><br>
+                <input class="inputConnect" type="text" name="prenom" require/><br>
+            <label for="nom">Votre Nom* :</label><br>
+                <input class="inputConnect" type="text" name="nom"require/><br>
+            <label for="email">Votre Email* :</label><br>
+                <input class="inputConnect" type="email" name="email" require/><br>
+            <label for="mdp">Votre Mot de Passe* :</label><br>
+                <input class="inputConnect" type="password" name="mdp" require/><br>
                 <input class="inputConnect" type="submit" value="créer un compte"/>
         </form>
     </div>
