@@ -21,8 +21,8 @@
       <span>
         <img alt="logo paramètres" src="./public/setting-icon.png" />
       </span>
-      <button href="#">Se connecter</button>
-      <a href="http://localhost/twint/Twint-E-Sport/?page=viewMonCompte"><button>Mon compte</button></a>
+      <a href="./?page=viewSeConnecter"><button>Se connecter</button></a>
+      <a href="./?page=viewMonCompte"><button>Mon compte</button></a>
     </div>
 	</header>
 </body>
