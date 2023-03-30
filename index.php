@@ -1,7 +1,9 @@
 <?php
  require_once "./controllers/controllerTwintESport.php";
+ require_once "./controllers/controllerApi.php";
 
 $twintESport = new TwintESportController;
+$apiDatas = new ApiController;
 
 session_start();
 
@@ -15,9 +17,9 @@ if(empty($_GET['page'])){
         break;
         case "viewMatches": $twintESport->displayMatches();
         break;
-        case "viewJoueur": $twintESport->displayPlayer();
+        case "viewJoueur": $apiDatas->vueJoueur($_GET['id']);
         break;
-        case "viewJoueurs": $twintESport->displayPlayers();
+        case "viewJoueurs": $apiDatas->playerDatas();
         break;
         case "viewMatch": $twintESport->displayMatch();
         break;
@@ -33,7 +35,7 @@ if(empty($_GET['page'])){
         break;
         case "creerUnCompte" : $twintESport->displayAddUser();
         break;
-        case "addAccount" : $twintESport->addUser($_POST['email'], $_POST['mdp'], $_POST['prenom'], $_POST['nom'], $_POST['adresse'], $_POST['ville'], $_POST['codePostal']);
+        case "addAccount" : $twintESport->addUser($_POST['email'], $_POST['mdp'], $_POST['prenom'], $_POST['nom']);
         break;
         
     }
