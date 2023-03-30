@@ -34,6 +34,9 @@ class TwintESportController{
     public function displayPlayers(){
         require "./views/viewJoueurs.php";
     }
+    public function displayApprendre(){
+        require "./views/viewApprendre.php";
+    }
     public function displayUser(){
         if (isset($_SESSION['iduser'])){
             $iduser = $_SESSION['iduser'];
