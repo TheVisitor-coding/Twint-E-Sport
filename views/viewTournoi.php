@@ -1,10 +1,9 @@
-tournoi<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tournois</title>
   <link href="./public/tournoi.css" rel="stylesheet">
   <link href="./public/formulaire.css" rel="stylesheet">
   <link href="./public/game-filter1.css" rel="stylesheet">
@@ -12,6 +11,7 @@ tournoi<!DOCTYPE html>
 <body>
   <!-- Filter Games -->
   <script src="./public/filter.js"></script>
+  <?php include "./views/header.php";?>
   <div class="container-games">
     <p id="filter-text">Trier par  :</p>
     <div class="games">
