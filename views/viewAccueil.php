@@ -68,13 +68,13 @@
                 <div class="live">
                     <div class="livemini">
                         <a href="#">
-                            <img alt="image d'un live de esport" src="https://via.placeholder.com/398x223" />
+                            <img alt="image d'un live de esport" src="./public/live1.png" />
                             <h3>Quake pro league</h3>
                         </a>
                     </div>
                     <div class="livemini">
                         <a href="#">
-                            <img alt="image d'un live de esport" src="https://via.placeholder.com/398x223" />
+                            <img alt="image d'un live de esport" src="./public/live2.png" />
                             <h3>eLeague 1 2023</h3>
                         </a>
                     </div>
@@ -84,13 +84,13 @@
                 <div class="replay">
                     <div class="replaymini">
                         <a href="#">
-                            <img alt="image d'un replay de esport" src="https://via.placeholder.com/398x223" />
+                            <img alt="image d'un replay de esport" src="./public/live2.png" />
                             <h3>ESL R1 2023</h3>
                         </a>
                     </div>
                     <div class="replaymini">
                         <a href="#">
-                            <img alt="image d'un replay de esport" src="https://via.placeholder.com/398x223" />
+                            <img alt="image d'un replay de esport" src="./public/live1.png" />
                             <h3>ESL R1 2023</h3>
                         </a>
                     </div>

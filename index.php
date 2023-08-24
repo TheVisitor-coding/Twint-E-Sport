@@ -23,6 +23,8 @@ if(empty($_GET['page'])){
         break;
         case "viewMatch": $twintESport->displayMatch();
         break;
+        case "viewApprendre": $twintESport->displayApprendre();
+        break;
         case "viewSeConnecter" : $twintESport->afficherSeConnecter();
         break;
         case "connect" : $twintESport->connexion();

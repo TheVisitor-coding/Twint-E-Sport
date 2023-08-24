@@ -9,6 +9,7 @@
   <link href="./public/game-filter1.css" rel="stylesheet">
 </head>
 <body>
+  <?php require "./views/header.php" ?>
   <!-- Filter Games -->
   <script src="./public/filter.js"></script>
   <?php include "./views/header.php";?>
@@ -176,4 +177,5 @@
   </section>
   <!-- value=""<?php echo date('Y-m-d'); ?>"" Pour la valeur de la date d'aujourd'hui formulaire -->
 </body>
+<?php require "./views/footer.php" ?>
 </html>
